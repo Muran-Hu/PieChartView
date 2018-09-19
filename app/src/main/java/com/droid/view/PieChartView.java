@@ -120,9 +120,10 @@ public class PieChartView extends View {
     private void drawTitle(Canvas canvas) {
         Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setTextSize(30);
-        paint.setColor(Color.WHITE);
+        paint.setColor(Color.BLACK);
         paint.setTextAlign(Paint.Align.CENTER);
-        canvas.drawText(title, x/2, y-30, paint);
+        paint.setTextSize(66);
+        canvas.drawText(title, x/2, y-100, paint);
     }
 
     private void drawArcs(Canvas canvas) {
